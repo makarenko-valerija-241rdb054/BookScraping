@@ -1,18 +1,18 @@
-import requests
-import bs4
+import selenium
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 
-url="https://www.amazon.com/kindle-dbs/storefront?storeType=browse&node=154606011"
-saturs=requests.get(url)
+import time
 
-print(saturs.status_code)
+options = Options()
 
-if saturs.status_code==200:
-    lapa=bs4.BeautifulSoup(saturs.content, "html.parser")
-    #print(lapa)
-    atrada=lapa.find_all("body")
-    print(atrada)
-    f=open("temp.txt", "w")
-    for a in atrada:
-        print(a)
-    f.close()
+# Setup service and driver
+service = Service()
+driver = webdriver.Chrome(service=service, options=options)
 
+url="https://old.reddit.com/"
+driver.get(url)
+
+input()
