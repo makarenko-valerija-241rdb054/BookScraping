@@ -105,8 +105,8 @@
 <a href="https://scp-wiki.wikidot.com/red-queen-s-race">RED QUEEN'S RACE</a>
 <a href="http://www.wikidot.com/user:info/intercedent" onclick="WIKIDOT.page.listeners.userInfo(4048054); return false;">Intercedent</a>
 <a href="https://scp-wiki.wikidot.com/featured-goi-format-archive">Archived GoI Features</a>
-<a href="https://scp-wiki.wikidot.com/black-diamond-billions-hub">Black Diamond Billions Hub</a>
-<a href="http://www.wikidot.com/user:info/xexnoncores" onclick="WIKIDOT.page.listeners.userInfo(9159226); return false;">xexnoncores</a>
+<a href="https://scp-wiki.wikidot.com/for-brandon">for Brandon</a>
+<a href="http://www.wikidot.com/user:info/thechunk" onclick="WIKIDOT.page.listeners.userInfo(8411070); return false;">TheChunk</a>
 <a href="https://scp-wiki.wikidot.com/reviewers-spotlight-archive-iii">Archived Spotlights</a>
 <a href="/artwork-hub">Featured Artists</a>
 <a href="https://scp-wiki.wikidot.com/artist-showcase-archive">Past Art Spotlights</a>
@@ -154,10 +154,10 @@
 <a href="/component:license-box">License Box component</a>
 <a href="/licensing-guide">Licensing Guide</a>
 <a href="/theme:site">Site Theme</a>
-<a href="http://www.wikidot.com/user:info/aelanna" onclick="WIKIDOT.page.listeners.userInfo(334454); return false;"><img alt="Aelanna" class="small" src="https://www.wikidot.com/avatar.php?userid=334454&amp;amp;size=small&amp;amp;timestamp=1744202725" style="background-image:url(https://www.wikidot.com/userkarma.php?u=334454)"/></a>
+<a href="http://www.wikidot.com/user:info/aelanna" onclick="WIKIDOT.page.listeners.userInfo(334454); return false;"><img alt="Aelanna" class="small" src="https://www.wikidot.com/avatar.php?userid=334454&amp;amp;size=small&amp;amp;timestamp=1744871545" style="background-image:url(https://www.wikidot.com/userkarma.php?u=334454)"/></a>
 <a href="http://www.wikidot.com/user:info/aelanna" onclick="WIKIDOT.page.listeners.userInfo(334454); return false;">Aelanna</a>
 <a href="/component:theme">Site Theme (Legacy Redirect)</a>
-<a href="http://www.wikidot.com/user:info/dr-grom" onclick="WIKIDOT.page.listeners.userInfo(2026083); return false;"><img alt="Dr_Grom" class="small" src="https://www.wikidot.com/avatar.php?userid=2026083&amp;amp;size=small&amp;amp;timestamp=1744202725" style="background-image:url(https://www.wikidot.com/userkarma.php?u=2026083)"/></a>
+<a href="http://www.wikidot.com/user:info/dr-grom" onclick="WIKIDOT.page.listeners.userInfo(2026083); return false;"><img alt="Dr_Grom" class="small" src="https://www.wikidot.com/avatar.php?userid=2026083&amp;amp;size=small&amp;amp;timestamp=1744871545" style="background-image:url(https://www.wikidot.com/userkarma.php?u=2026083)"/></a>
 <a href="http://www.wikidot.com/user:info/dr-grom" onclick="WIKIDOT.page.listeners.userInfo(2026083); return false;">Dr_Grom</a>
 <a href="https://github.com/Grombald/Common-Theme">GitHub</a>
 <a href="/system:page-tags/tag/admin#pages">admin</a>
