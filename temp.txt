@@ -162,7 +162,7 @@
 <a href="https://github.com/Grombald/Common-Theme">GitHub</a>
 <a href="/system:page-tags/tag/admin#pages">admin</a>
 <a class="btn btn-default" href="javascript:;" id="edit-button">Edit</a>
-<a class="btn btn-default" href="javascript:;" id="pagerate-button">Rate (<span id="prw54355">+403</span>)</a>
+<a class="btn btn-default" href="javascript:;" id="pagerate-button">Rate (<span id="prw54355">+404</span>)</a>
 <a class="btn btn-default" href="javascript:;" id="tags-button">Tags</a>
 <a class="btn btn-default" href="/forum/t-14881792/main" id="discuss-button">Discuss (136)</a>
 <a class="btn btn-default" href="javascript:;" id="history-button">History</a>

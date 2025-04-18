@@ -2,6 +2,7 @@ import requests
 import bs4
 import re
 import time
+from openpyxl import Workbook
 
 
 class Node:
@@ -158,6 +159,22 @@ def main():
                     print(SCPList.search(index).code+"---"+SCPList.search(index).name+"---"+SCPList.search(index).danger)
                 if y:
                     SCPList.print()
+                if z:
+                    dan=re.sub(r"excel ", "", use)
+                    dan=dan.strip()
+                    wb=Workbook()
+                    name_string="SCP "+dan
+                    ws1=wb.create_sheet(name_string, 0)
+                    ws1.append(["Code", "Name", "Danger Class"])
+                    curr=SCPList.head
+                    while(curr):
+                        if curr.danger.strip().lower()==dan:
+                            ws1.append([curr.code, curr.name, curr.danger])
+                        curr=curr.next
+                    filename=f"{dan}_scp_list.xlsx"
+                    wb.save(filename)
+                    print("Excel file "+filename+" saved!")
+                    
                 if w:
                     terminal=False
                     
