@@ -93,20 +93,21 @@
 <img alt="black.png" class="image" src="https://scp-wiki.wdfiles.com/local--files/nav:side/black.png" style="z-index:-1; opacity: 0.3;"/><br/></a>
 <a href="/about-the-scp-foundation">CLASSIFIED</a>
 <a href="/news">Latest Issue</a>
-<a href="https://scp-wiki.wikidot.com/news-04-2025">here!</a>
+<a href="https://scp-wiki.wikidot.com/news-05-2025">here!</a>
 <a href="/news">Site News Hub</a>
-<a href="https://scp-wiki.wikidot.com/scp-8891">SCP-8891: Nervous Tick</a>
-<a href="http://www.wikidot.com/user:info/anorrack" onclick="WIKIDOT.page.listeners.userInfo(4188420); return false;">Anorrack</a>
-<a href="http://www.wikidot.com/user:info/tsercele" onclick="WIKIDOT.page.listeners.userInfo(2891035); return false;">Tsercele</a>
+<a href="https://scp-wiki.wikidot.com/scp-8799">SCP-8799: A Book of Kings</a>
+<a href="http://www.wikidot.com/user:info/tufto" onclick="WIKIDOT.page.listeners.userInfo(3337265); return false;">Tufto</a>
 <a href="https://scp-wiki.wikidot.com/featured-scp-archive-iii">Archived SCP Features</a>
-<a href="https://scp-wiki.wikidot.com/fear-of-sleep">Fear of Sleep</a>
-<a href="http://www.wikidot.com/user:info/tygently" onclick="WIKIDOT.page.listeners.userInfo(2038009); return false;">TyGently</a>
+<a href="https://scp-wiki.wikidot.com/let-there-be-green">Let There Be Green</a>
+<a href="http://www.wikidot.com/user:info/sailorenoch" onclick="WIKIDOT.page.listeners.userInfo(5553461); return false;">sailorenoch</a>
+<a href="http://www.wikidot.com/user:info/rottingraisins" onclick="WIKIDOT.page.listeners.userInfo(8418072); return false;">rottingraisins</a>
+<a href="http://www.wikidot.com/user:info/rosyfox2002" onclick="WIKIDOT.page.listeners.userInfo(8408483); return false;">Rosyfox2002</a>
 <a href="https://scp-wiki.wikidot.com/featured-tale-archive-ii">Archived Tale Features</a>
-<a href="https://scp-wiki.wikidot.com/red-queen-s-race">RED QUEEN'S RACE</a>
-<a href="http://www.wikidot.com/user:info/intercedent" onclick="WIKIDOT.page.listeners.userInfo(4048054); return false;">Intercedent</a>
+<a href="https://scp-wiki.wikidot.com/lotus-eater-pho">The Lotus Eater Reviews: Pho Vu Lan</a>
+<a href="http://www.wikidot.com/user:info/drgrimoire" onclick="WIKIDOT.page.listeners.userInfo(8010543); return false;">DrGrimoire</a>
 <a href="https://scp-wiki.wikidot.com/featured-goi-format-archive">Archived GoI Features</a>
-<a href="https://scp-wiki.wikidot.com/for-brandon">for Brandon</a>
-<a href="http://www.wikidot.com/user:info/thechunk" onclick="WIKIDOT.page.listeners.userInfo(8411070); return false;">TheChunk</a>
+<a href="https://scp-wiki.wikidot.com/a-wolf-at-the-door">A Wolf at the Door</a>
+<a href="http://www.wikidot.com/user:info/mxsinister" onclick="WIKIDOT.page.listeners.userInfo(7735264); return false;">mxsinister</a>
 <a href="https://scp-wiki.wikidot.com/reviewers-spotlight-archive-iii">Archived Spotlights</a>
 <a href="/artwork-hub">Featured Artists</a>
 <a href="https://scp-wiki.wikidot.com/artist-showcase-archive">Past Art Spotlights</a>
@@ -154,15 +155,15 @@
 <a href="/component:license-box">License Box component</a>
 <a href="/licensing-guide">Licensing Guide</a>
 <a href="/theme:site">Site Theme</a>
-<a href="http://www.wikidot.com/user:info/aelanna" onclick="WIKIDOT.page.listeners.userInfo(334454); return false;"><img alt="Aelanna" class="small" src="https://www.wikidot.com/avatar.php?userid=334454&amp;amp;size=small&amp;amp;timestamp=1744871545" style="background-image:url(https://www.wikidot.com/userkarma.php?u=334454)"/></a>
+<a href="http://www.wikidot.com/user:info/aelanna" onclick="WIKIDOT.page.listeners.userInfo(334454); return false;"><img alt="Aelanna" class="small" src="https://www.wikidot.com/avatar.php?userid=334454&amp;amp;size=small&amp;amp;timestamp=1746103364" style="background-image:url(https://www.wikidot.com/userkarma.php?u=334454)"/></a>
 <a href="http://www.wikidot.com/user:info/aelanna" onclick="WIKIDOT.page.listeners.userInfo(334454); return false;">Aelanna</a>
 <a href="/component:theme">Site Theme (Legacy Redirect)</a>
-<a href="http://www.wikidot.com/user:info/dr-grom" onclick="WIKIDOT.page.listeners.userInfo(2026083); return false;"><img alt="Dr_Grom" class="small" src="https://www.wikidot.com/avatar.php?userid=2026083&amp;amp;size=small&amp;amp;timestamp=1744871545" style="background-image:url(https://www.wikidot.com/userkarma.php?u=2026083)"/></a>
+<a href="http://www.wikidot.com/user:info/dr-grom" onclick="WIKIDOT.page.listeners.userInfo(2026083); return false;"><img alt="Dr_Grom" class="small" src="https://www.wikidot.com/avatar.php?userid=2026083&amp;amp;size=small&amp;amp;timestamp=1746103364" style="background-image:url(https://www.wikidot.com/userkarma.php?u=2026083)"/></a>
 <a href="http://www.wikidot.com/user:info/dr-grom" onclick="WIKIDOT.page.listeners.userInfo(2026083); return false;">Dr_Grom</a>
 <a href="https://github.com/Grombald/Common-Theme">GitHub</a>
 <a href="/system:page-tags/tag/admin#pages">admin</a>
 <a class="btn btn-default" href="javascript:;" id="edit-button">Edit</a>
-<a class="btn btn-default" href="javascript:;" id="pagerate-button">Rate (<span id="prw54355">+404</span>)</a>
+<a class="btn btn-default" href="javascript:;" id="pagerate-button">Rate (<span id="prw54355">+412</span>)</a>
 <a class="btn btn-default" href="javascript:;" id="tags-button">Tags</a>
 <a class="btn btn-default" href="/forum/t-14881792/main" id="discuss-button">Discuss (136)</a>
 <a class="btn btn-default" href="javascript:;" id="history-button">History</a>

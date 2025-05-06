@@ -4,14 +4,17 @@ import re
 import time
 from openpyxl import Workbook
 
-
+###
+###Linked list data structure!
+###
+# node
 class Node:
     def __init__(self, code, name, danger):
         self.code=code
         self.name=name
         self.danger=danger
         self.next=None
-
+# the list itself
 class LinkedList:
     def __init__(self):
         self.head=None
@@ -44,6 +47,7 @@ class LinkedList:
         if index==1:
             return self.head
     
+    #method for printing out the items
     def print(self):
         curr=self.head
         while(curr):
@@ -53,37 +57,43 @@ class LinkedList:
 
 
 def main():
+    #the Linked List which will store all the items that will be scraped from the web
     SCPList=LinkedList()
     url="https://scp-wiki.wikidot.com/"
     saturs=requests.get(url)
 
-    #print(saturs.status_code)
-    #f=open("temp.txt", "w")
-    #f.write(str(saturs.content))
-    #f.close()
-
+    #check if the url response is valid
     if saturs.status_code==200:
         lapa=bs4.BeautifulSoup(saturs.content, "html.parser")
+        #find all hyperlinks using Beautiful Soup
         atrada=lapa.find_all("a")
+        #write the hyperlinks into a text file ("temp.txt")
+        #this is done for the purpose of debugging - to see that all the hyperlinks are indeed found
         f=open("temp.txt", "w")
         for a in atrada:
             f.write(str(a)+"\n")
         f.close()
+        #read the hyperlinks from the resulting file
         f=open("temp.txt", "r")
         lines=f.readlines()
+        #now the task is to find the rightmost text fragment behind the slash on the hyperlinks that contain Roman numerals
+        #that way we get a list of links to different SCP libraries (li)
         li=[]
         for l in lines:
-            x=re.search("^<a href=\".+\">(I|II|III|IV|V|VI|VII|VIII|IX)</a>", l)
+            x=re.search("^<a href=\".+\">(I|II|III|IV|V|VI|VII|VIII|IX)</a>", l) #searching using regex library
             if x:
-                y=re.split("\"", l)
+                y=l.split("\"")
                 z=re.sub("/", "", y[1])
-                li.append(str(url+z))
-        #print(li)
+                li.append(str(url+z))#this way a new url is made from the url of the current page and the fragment extracted
+                #it can later be used with the requests library
 
+        #asking the user to specify the SCP catalogue of interest
         print("Which SCP catalogue would you like to study? (roman numerals I-IX)")
         use=input()
+        #asking the user to specify the number of objects they would like to find
         print("How many would you like to find?")
         use2=input()
+        #this match case determines which link from "li" will be used based on the catalogue selected
         match use:
             case "I":
                 url1=li[0]
@@ -105,42 +115,52 @@ def main():
                 url1=li[8]
             case _:
                 url1=li[1]
+        #the new url is used with the requests library
         saturs=requests.get(url1)
+        #url check
         if saturs.status_code==200:
-            #f=open("temp2.txt", "w")
-            #f.write(str(saturs.content))
-            #f.close()
             lapa=bs4.BeautifulSoup(saturs.content, "html.parser")
+            #finding all list items using Beautiful Soup (each SCP object is a list item)
             atrada=lapa.find_all("li")
+            #yet again, for debugging purposes, the items are written into a file
             f=open("temp2.txt", "w")
             for a in atrada:
+                #list items that are SCPs have child hyperlinks - this clause finds them
                 link=a.find_all("a")
                 link1=link[0]
-                #print(link1.contents)
-                x=re.search(r"^SCP-\d+$", link1.contents[0])
+                x=re.search(r"^SCP-\d+$", link1.contents[0])#a regex function call to determine if hyperlink text
+                #corresponds to an SCP title
                 if x:
                     #first linked list value - code!
                     code=link1.contents[0]
                     #second linked list value - name!
                     name=a.contents[1]
+                    #extracting the value under a href tag of a hyperlink
                     tag=bs4.BeautifulSoup(str(link1), "html.parser").a
                     rel=tag["href"]
                     rel1=re.sub("/", "", rel)
+                    #a time buffer not to overload the server
                     time.sleep(2)
+                    #opening a web page of an SCP item to scrape the danger class
                     saturs2=requests.get(url+rel1)
                     if saturs2.status_code==200:
                         lapa=bs4.BeautifulSoup(saturs2.content, "html.parser")
+                        #the danger class comes under the tag "strong"
                         atrada=lapa.find_all("strong")
                         for a in atrada:
-                            x=re.search("^Object Class:$", str(a.contents[0]))
+                            x=re.search("^Object Class:$", str(a.contents[0]))#looking for the indicator that the html
+                            #tag "strong" that was found was indeed the danger class
                             if x:
                                 par=a.find_parent("p")
+                                #third linked list value - danger!
                                 danger=par.contents[1]
-                                SCPList.append(code, name, danger)
+                                SCPList.append(code, name, danger) #adding the value to the list
                                 #Monitoring the WebScraping process
                                 print("Found "+str(SCPList.size)+" SCPs")
+                #the size buffer
                 if SCPList.size>=int(use2):
                     break
+            #beginning of the command terminal
             print("All desired SCPs have been found!")
             print("Type print n (for example print 10) to display an element of database on screen")
             print("Type print all to display all database on screen")
@@ -149,16 +169,23 @@ def main():
             terminal=True
             while(terminal):
                 use=input()
+                #command indicator for printing a particular item (with index)
                 x=re.search(r"^print \d+$", use)
+                #command indicator for printing all items
                 y=re.search("^print all$", use)
+                #command indicator for making an excel file with items of a danger class
                 z=re.search("^excel (safe|euclid|keter|thaumiel)$", use)
+                #command indicator for exiting the terminal
                 w=re.search("^exit$", use)
+                #print item
                 if x:
                     use1=re.sub("print ", "", use)
                     index=int(use1)
                     print(SCPList.search(index).code+"---"+SCPList.search(index).name+"---"+SCPList.search(index).danger)
+                #print all items
                 if y:
                     SCPList.print()
+                #make excel file
                 if z:
                     dan=re.sub(r"excel ", "", use)
                     dan=dan.strip()
@@ -174,7 +201,7 @@ def main():
                     filename=f"{dan}_scp_list.xlsx"
                     wb.save(filename)
                     print("Excel file "+filename+" saved!")
-                    
+                #exit    
                 if w:
                     terminal=False
                     
